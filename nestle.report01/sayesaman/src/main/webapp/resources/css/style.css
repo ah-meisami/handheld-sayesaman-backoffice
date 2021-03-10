@@ -1,0 +1,23 @@
+th {
+    background-color: dimgray;
+    border: solid 1px #000000;
+    color: chartreuse;
+    font-family: tahoma;
+    font-size: 12px;
+    height: 40px;
+}
+td {
+    font-family: Tahoma;
+    font-size: 12px;
+}
+.inp {
+    font-family: Tahoma;
+    font-size: 12px;
+    width: 350px;
+    height: 30px;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 75%;
+}

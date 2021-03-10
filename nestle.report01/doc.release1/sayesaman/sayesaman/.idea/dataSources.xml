@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="382877782">
+    <data-source source="LOCAL" name="app01.DSDB_TEH" product="Microsoft SQL Server" version="10.50.2500" jdbc-version="3.0" driver-name="jTDS Type 4 JDBC Driver for MS SQL Server and Sybase" driver-version="1.3.0" uuid="ff92019a-989b-4b37-a09e-304374588e3a">
+      <extra-name-characters>$#@</extra-name-characters>
+      <identifier-quote-string>&quot;</identifier-quote-string>
+      <synchronize>true</synchronize>
+      <jdbc-driver>net.sourceforge.jtds.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:jtds:sqlserver://app01/DSDB_TEH;</jdbc-url>
+      <user-name>VNRW</user-name>
+      <user-password>dffcdfe4df9bdf98df99</user-password>
+      <libraries>
+        <library>
+          <url>jar://$USER_HOME$/IdeaProjects/untitled1/lib/jtds-1.3.0.jar!/</url>
+        </library>
+        <library>
+          <url>file://$USER_HOME$/IdeaProjects/untitled1/lib/jtds-license.txt</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+

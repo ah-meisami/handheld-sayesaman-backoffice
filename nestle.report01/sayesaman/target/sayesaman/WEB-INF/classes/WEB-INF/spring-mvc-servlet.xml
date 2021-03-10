@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!--=======================================================================================================-->
+    <!-- Config for Annotation. It registers a DefaultAnnotationHandlerMapping and AnnotationMethodHandlerAdapter -->
+    <!-- This is responsible for automatically converting our custom POJO to JSON. Make sure you have Jackson in your classpath -->
+    <mvc:annotation-driven/>
+
+    <!-- Handles HTTP GET requests for /resources/** by efficiently serving
+        up static resources in the ${webappRoot}/resources/ directory -->
+    <mvc:resources mapping="/resources/**" location="/resources/"/>
+    <!--=======================================================================================================-->
+
+    <!--=======================================================================================================-->
+    <!--<import resource="classpath:spring-context.xml"/>-->
+    <import resource="classpath:spring-context-jdbc.xml"/>
+    <!--=======================================================================================================-->
+
+    <!--=======================================================================================================-->
+    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/views/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+    <!--=======================================================================================================-->
+
+
+    <!--=======================================================================================================-->
+    <bean id="messageSource"
+          class="org.springframework.context.support.ReloadableResourceBundleMessageSource"
+          p:basename="/WEB-INF/messages"/>
+    <!--=======================================================================================================-->
+</beans>
